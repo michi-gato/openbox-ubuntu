@@ -1,1 +1,13 @@
 sudo apt-get install openbox obconf
+<--! logout and restart. Choose Openbox on login screen -->
+
+<--! reference: http://www.ubuntuopenbox.com/lessons.html // install core packages -->
+sudo apt-get install xorg openbox suckless-tools terminator lxpanel thunar lightdm wicd firefox geany
+
+<--! install Obmenu to easily edit menu in GUI -->
+sudo apt-get install obmenu
+obmenu
+<--! set firefox as Web browser and gnite as shutdown now -->
+
+<!-- install taskbar -->
+sudo apt-get lxpanel
