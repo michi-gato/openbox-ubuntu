@@ -28,3 +28,4 @@ sudo apt-get install zotero-standalone
 * CTRL + z : Pause application
 * fg : resume application in foreground
 * CTRL + u : clears command line in use
+* xrandr --output LVDS-1 --brightness 0.5 : lowers brightness on screen by one-half
