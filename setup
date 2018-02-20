@@ -11,3 +11,9 @@ obmenu
 
 <!-- install taskbar -->
 sudo apt-get lxpanel
+
+
+Need to do:
+* adjust sleep timer
+* set up conky view
+* ff bookmarks and add-ons, where?
