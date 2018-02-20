@@ -12,8 +12,19 @@ obmenu
 <!-- install taskbar -->
 sudo apt-get lxpanel
 
+<!-- install zotero citation manager -->
+sudo apt-add-repository ppa:smathot/cogscinl
+sudo apt-get update
+sudo apt-get install zotero-standalone
 
-Need to do:
+
+## Need to do:
 * adjust sleep timer
 * set up conky view
 * ff bookmarks and add-ons, where?
+* references on this documentation page
+
+## Commands to remember
+* CTRL + z : Pause application
+* fg : resume application in foreground
+* CTRL + u : clears command line in use
