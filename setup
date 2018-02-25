@@ -9,13 +9,37 @@ sudo apt-get install obmenu
 obmenu
 <--! set firefox as Web browser and gnite as shutdown now -->
 
-<!-- install taskbar -->
+<--! install taskbar -->
 sudo apt-get lxpanel
 
-<!-- install zotero citation manager -->
+<--! install zotero citation manager -->
 sudo apt-add-repository ppa:smathot/cogscinl
 sudo apt-get update
 sudo apt-get install zotero-standalone
+
+<--! install chromium web browser -->
+sudo apt-get install chromium-browser
+
+<--! install unicode rxvt terminal emulator to replace Terminator -->
+sudo apt-cache search rx
+sudo apt-get install rxvt-unicode-256color
+<--! run urxvt in parallel to check it runs as expected. Open Chromium -->
+<--! update dekstop menu to replace Terminator with urxvt as default terminal -->
+run obmenu
+update Terminal emulator option to purrrxvt
+Save
+<--! uninstall Terminator terminal emulator -->
+<--! check name of packages to be removed -->
+dpkg --list
+<--! remove package of choice -->
+sudo apt-get remove terminator
+<--! Purge any related code -->
+sudo apt-get purge package_name
+<--! Then Autoremove -->
+sudo apt-get autoremove
+<--! Finally, do a clean so you check everything is correctly removed -->
+sudo apt-get clean
+
 
 
 ## Need to do:
@@ -23,9 +47,16 @@ sudo apt-get install zotero-standalone
 * set up conky view
 * ff bookmarks and add-ons, where?
 * references on this documentation page
+* change urxvt font to more legible
+* get ride of urxvt scroll bar
+* set up lxpanel on startup
+
 
 ## Commands to remember
 * CTRL + z : Pause application
 * fg : resume application in foreground
 * CTRL + u : clears command line in use
 * xrandr --output LVDS-1 --brightness 0.5 : lowers brightness on screen by one-half
+* rxtv : terminal emulator
+* apt-cache search : to see what programs are available for install
+* obmenu : configure desktop menu options
