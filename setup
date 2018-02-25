@@ -50,6 +50,7 @@ sudo apt-get clean
 * change urxvt font to more legible
 * get ride of urxvt scroll bar
 * set up lxpanel on startup
+* make FF compatible to Netflix
 
 
 ## Commands to remember
